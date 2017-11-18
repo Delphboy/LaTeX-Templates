@@ -1,0 +1,57 @@
+\documentclass[12pt]{report}
+
+\usepackage[margin=1.0in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{url, lipsum}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+\graphicspath{/images/}
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\setlength\headheight{15pt}
+\fancyhead[L]{Author}
+\fancyhead[R]{Student ID: }
+\fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
+
+%-------------------------------------------------------------------------------
+% TITLE PAGE
+%-------------------------------------------------------------------------------
+\begin{document}
+	\title{ \normalsize \textsc{Module Name}
+		\\ [2.0cm]
+		\HRule{0.5pt} \\
+		\LARGE \textbf{\uppercase{Report Title}}
+		\HRule{2pt} \\ [0.5cm]}	
+	\date{Date}
+	
+	\author{
+		Name \\ \\
+		Student ID:  \\ 
+		Username:  \\
+		CRN: \\
+		Other title page information
+	}
+
+	\maketitle
+
+	\tableofcontents
+	\newpage
+
+\begin{abstract}
+ \lipsum
+\end{abstract}
+
+
+% import sections from files
+\input{folder/file.tex}
+
+\end{document}          
+
